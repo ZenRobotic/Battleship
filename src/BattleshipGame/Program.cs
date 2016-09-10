@@ -26,8 +26,9 @@ namespace BattleshipGame
             {
                 for (int j = 0; j < Console.WindowHeight; j++)
                 {
-                    Console.SetCursorPosition(i, j);
-                    Console.Write(i % 10);
+                    //Console.SetCursorPosition(i, j);
+                    Console.WriteLine("☻");
+                    Console.WriteLine("☺");
                 }
             }
             Console.ReadKey();
