@@ -21,15 +21,25 @@ namespace BattleshipGame
             //              a. If user confirms, game goes to Play phase
             //              b. If user declines, game returns to Setup phase step 1
             // Phase 2: play
-
+            var top    = "┌─┬─┬─┬─┬─┬─┬─┬─┬─┬─┐";
+            var empty  = "│ │ │ │ │ │ │ │ │ │ │";
+            var middle = "├─┼─┼─┼─┼─┼─┼─┼─┼─┼─┤";
+            var bottom = "└─┴─┴─┴─┴─┴─┴─┴─┴─┴─┘";
+            Console.SetCursorPosition(Console.WindowWidth - 21, 0);
+            Console.Write(top);
+            Console.SetCursorPosition(Console.WindowWidth - 21, 1);
+            Console.Write(empty);
+            Console.SetCursorPosition(Console.WindowWidth - 21, 2);
+            Console.Write(middle);
+            Console.SetCursorPosition(Console.WindowWidth - 21, 3);
+            Console.Write(bottom);
             for (int i = 0; i < Console.WindowWidth; i++)
             {
                 for (int j = 0; j < Console.WindowHeight; j++)
                 {
                     //Console.SetCursorPosition(i, j);
-                    Console.WriteLine("☻");
-                    Console.WriteLine("☺");
-                }
+                    
+                }  
             }
             Console.ReadKey();
         }
