@@ -27,11 +27,25 @@ namespace BattleshipGame
             var bottom = "└─┴─┴─┴─┴─┴─┴─┴─┴─┴─┘";
             Console.SetCursorPosition(Console.WindowWidth - 21, 0);
             Console.Write(top);
-            Console.SetCursorPosition(Console.WindowWidth - 21, 1);
+            for (int i = 1; i <19; i+=2)
+            {
+                Console.SetCursorPosition(Console.WindowWidth - 21, i);
+                Console.Write(empty);
+                //for (int j = 2; j < 10; j++)
+                //{
+                    Console.SetCursorPosition(Console.WindowWidth - 21, i+1);
+                    Console.Write(middle);
+                //}
+            }
+
+            // Console.ReadKey();
+            //Console.SetCursorPosition(Console.WindowWidth - 21, 1);
+            //Console.Write(empty);
+            //Console.SetCursorPosition(Console.WindowWidth - 21, 2);
+            //Console.Write(middle);
+            Console.SetCursorPosition(Console.WindowWidth - 21, 19);
             Console.Write(empty);
-            Console.SetCursorPosition(Console.WindowWidth - 21, 2);
-            Console.Write(middle);
-            Console.SetCursorPosition(Console.WindowWidth - 21, 3);
+            Console.SetCursorPosition(Console.WindowWidth - 21, 20);
             Console.Write(bottom);
             for (int i = 0; i < Console.WindowWidth; i++)
             {
